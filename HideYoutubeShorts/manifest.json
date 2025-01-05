@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Hide YT Shorts - Enhanced",
+  "description": "Hides Shorts From Everywhere. KendrickExtensions",
+  "icons": {
+    "64": "logo.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["shortsVisibilityHandler.js", "main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "64": "logo.png"
+    },
+    "default_title": "Hide-Shorts",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://*.youtube.com/*"
+  ]
+}

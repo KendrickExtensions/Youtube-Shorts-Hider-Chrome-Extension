@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Shorts Hider</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header>
+            <h1>YouTube Shorts Hider</h1>
+        </header>
+
+        <section class="settings-section">
+            <div class="setting">
+                <label for="hideYTShortsVideosInput">Hide Shorts Videos</label>
+                <input type="checkbox" id="hideYTShortsVideosInput">
+            </div>
+            <div class="setting">
+                <label for="hideYTShortsTabInput">Hide Shorts Tab</label>
+                <input type="checkbox" id="hideYTShortsTabInput">
+            </div>
+            <div class="setting">
+                <label for="hideYTShortsNotificationsInput">Hide Shorts Notifications</label>
+                <input type="checkbox" id="hideYTShortsNotificationsInput">
+            </div>
+            <div class="setting">
+                <label for="hideYTShortsVideosOnHomePageInput">Hide Shorts on Home Page</label>
+                <input type="checkbox" id="hideYTShortsVideosOnHomePageInput">
+            </div>
+            <div class="setting">
+                <label for="hideYTShortsVideosOnSubscriptionPageInput">Hide Shorts on Subscription Page</label>
+                <input type="checkbox" id="hideYTShortsVideosOnSubscriptionPageInput">
+            </div>
+            <div class="setting">
+                <label for="hideYTShortsVideosOnSearchPageInput">Hide Shorts on Search Page</label>
+                <input type="checkbox" id="hideYTShortsVideosOnSearchPageInput">
+            </div>
+            <div class="setting">
+                <label for="hideYTShortsVideosOnChannelPageInput">Hide Shorts on Channel Page</label>
+                <input type="checkbox" id="hideYTShortsVideosOnChannelPageInput">
+            </div>
+        </section>
+
+        <section class="settings-section">
+            <div class="setting">
+                <label for="hidingShortsTimeoutTimeMsInput">Timeout (ms)</label>
+                <input type="number" id="hidingShortsTimeoutTimeMsInput" min="0" max="5000">
+            </div>
+            <div class="setting">
+                <label for="hidingShortsTimeoutTimeMsInputCheckbox">Activate Timeout</label>
+                <input type="checkbox" id="hidingShortsTimeoutTimeMsInputCheckbox">
+            </div>
+            <div class="setting">
+                <label for="hidingShortVideosTimeSecondsInput">Hide Short Videos Below (seconds)</label>
+                <input type="number" id="hidingShortVideosTimeSecondsInput" min="0" max="60">
+            </div>
+            <div class="setting">
+                <label for="hidingShortVideosTimeSecondsInputCheckbox">Activate Short Video Hiding</label>
+                <input type="checkbox" id="hidingShortVideosTimeSecondsInputCheckbox">
+            </div>
+            <div class="setting">
+                <label for="hidingLiveVideosInputCheckbox">Hide Live Videos</label>
+                <input type="checkbox" id="hidingLiveVideosInputCheckbox">
+            </div>
+            <div class="setting">
+                <label for="hidingUpcomingVideosInputCheckbox">Hide Upcoming Videos</label>
+                <input type="checkbox" id="hidingUpcomingVideosInputCheckbox">
+            </div>
+        </section>
+
+        <footer>
+            <span id="ext-version"></span>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
